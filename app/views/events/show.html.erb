@@ -1,0 +1,27 @@
+<%= flash_messages %>
+<h2>Event</h2>
+
+
+<p>
+  <strong>Title:</strong>
+  <%= @event.title %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @event.start_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @event.end_time %>
+</p>
+
+<p>
+  <strong>Desc:</strong>
+  <%= @event.description %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event), class: "btn btn-warning"  %> |
+<%= link_to 'Back', events_path, class: "btn btn-default" %> |
+<%= link_to 'Send Rsvps', rsvps_send_rsvp_path, class: "btn btn-primary" %>
